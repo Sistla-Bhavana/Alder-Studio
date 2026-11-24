@@ -1,0 +1,6 @@
+{
+  "name": "Alder Studio",
+  "description": "Enquiry-driven Swiss Grid and Bento business consultancy website with interactive ROI estimator and WhatsApp lead widget.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

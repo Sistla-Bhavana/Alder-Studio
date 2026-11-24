@@ -1,0 +1,1562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===================================================================
+         EDIT: SEO & SOCIAL METADATA
+         Update the page title and description to match your business.
+         =================================================================== -->
+    <title>Alder Studio — Conversion Websites &amp; Lead Systems</title>
+    <meta
+      name="description"
+      content="Enquiry-driven Swiss Grid and Bento business consultancy website with interactive ROI estimator and WhatsApp lead widget."
+    />
+    <meta property="og:title" content="Alder Studio" />
+    <meta
+      property="og:description"
+      content="Enquiry-driven Swiss Grid and Bento business consultancy website with interactive ROI estimator and WhatsApp lead widget."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Typography: Plus Jakarta Sans (Display), DM Sans (Body), JetBrains Mono (Metrics) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet: All :root color variables and Swiss/Bento Grid styles -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <!-- Skip link for keyboard accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ===================================================================
+         STICKY NAVIGATION BAR (3-Zone Top Bar Contract)
+         Zone 1: Brand Wordmark | Zone 2: Page Links | Zone 3: Primary CTA
+         =================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Single-line Brand Wordmark (EDIT: Replace with your company name) -->
+        <a href="#home" class="brand-wordmark" data-nav-target="home">
+          Alder Studio
+        </a>
+
+        <!-- Zone 2: Desktop Navigation Links (5 concise single-line links) -->
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#home" class="nav-link is-active" data-nav-target="home" aria-current="page">Home</a>
+          <a href="#about" class="nav-link" data-nav-target="about">About Us</a>
+          <a href="#services" class="nav-link" data-nav-target="services">Services</a>
+          <a href="#results" class="nav-link" data-nav-target="results">Results &amp; FAQ</a>
+          <a href="#contact" class="nav-link" data-nav-target="contact">Contact</a>
+        </nav>
+
+        <!-- Zone 3: Single Primary Action + Mobile Hamburger Toggle -->
+        <div class="header-actions">
+          <button
+            type="button"
+            class="btn btn-primary btn-sm header-cta"
+            data-open-whatsapp
+            data-service="General Enquiry"
+          >
+            Chat on WhatsApp
+          </button>
+
+          <button
+            type="button"
+            class="hamburger-btn"
+            id="mobile-menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            aria-label="Toggle navigation menu"
+          >
+            <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="17" x2="20" y2="17" />
+            </svg>
+            <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="6" y1="6" x2="18" y2="18" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Subtle Scroll Reading Progress Bar -->
+      <div class="header-progress" id="header-progress" aria-hidden="true"></div>
+
+      <!-- Mobile Navigation Drawer -->
+      <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation" hidden>
+        <div class="container mobile-nav-inner">
+          <a href="#home" class="mobile-nav-link is-active" data-nav-target="home">Home</a>
+          <a href="#about" class="mobile-nav-link" data-nav-target="about">About Us</a>
+          <a href="#services" class="mobile-nav-link" data-nav-target="services">Services</a>
+          <a href="#results" class="mobile-nav-link" data-nav-target="results">Results &amp; FAQ</a>
+          <a href="#contact" class="mobile-nav-link" data-nav-target="contact">Contact</a>
+          <button
+            type="button"
+            class="btn btn-primary mobile-drawer-cta"
+            data-open-whatsapp
+            data-service="General Enquiry"
+          >
+            Chat on WhatsApp
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===================================================================
+         MAIN CONTENT AREA (SPA Multi-Page Views)
+         Each <section class="page-view"> acts as an independent page.
+         =================================================================== -->
+    <main id="main-content" class="site-main">
+      <!-- ===============================================================
+           PAGE 1: HOME
+           =============================================================== -->
+      <section class="page-view is-active" id="page-home" data-page="home" aria-labelledby="home-hero-title">
+        <div class="container page-stack">
+          <!-- Hero Swiss Split Bento with Luminous Pastel Ambient Backdrop -->
+          <div class="hero-stage">
+            <canvas class="hero-particles-canvas" id="hero-particles-canvas" aria-hidden="true"></canvas>
+            <div class="bento-grid bento-hero-split">
+              <article class="bento-card bento-surface-white hero-copy-card">
+                <div class="meta-line">
+                  <span>Conversion Architecture</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Singapore &amp; Melbourne</span>
+                </div>
+
+                <!-- EDIT: Main Hero Headline & Value Proposition -->
+                <h1 id="home-hero-title" class="hero-title">
+                  Websites and enquiry pipelines built for steady client growth.
+                </h1>
+
+                <p class="hero-subtitle">
+                  We design fast, structured business websites, search foundations, and WhatsApp lead workflows that turn organic traffic into booked consultations.
+                </p>
+
+                <div class="hero-cta-row">
+                  <button
+                    type="button"
+                    class="btn btn-whatsapp"
+                    data-open-whatsapp
+                    data-service="Conversion Website Architecture"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                    </svg>
+                    <span>Chat on WhatsApp</span>
+                  </button>
+                  <a href="#services" class="btn btn-secondary" data-nav-target="services">
+                    Explore Services
+                  </a>
+                </div>
+
+                <!-- Interactive Industry Benchmark Switcher inside Hero -->
+                <div class="hero-benchmark-bar" aria-label="Preview sector outcomes">
+                  <span class="hero-benchmark-label">Inspect sector benchmark:</span>
+                  <div class="segmented-control" role="tablist" aria-label="Industry sector benchmark">
+                    <button
+                      type="button"
+                      class="segmented-btn is-active"
+                      role="tab"
+                      aria-selected="true"
+                      data-hero-sector="architecture"
+                    >
+                      Architecture
+                    </button>
+                    <button
+                      type="button"
+                      class="segmented-btn"
+                      role="tab"
+                      aria-selected="false"
+                      data-hero-sector="healthcare"
+                    >
+                      Clinics
+                    </button>
+                    <button
+                      type="button"
+                      class="segmented-btn"
+                      role="tab"
+                      aria-selected="false"
+                      data-hero-sector="b2b"
+                    >
+                      B2B Supply
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Right Hero Column: Editorial Studio Photography + Live Benchmark Card -->
+              <div class="hero-visual-stack">
+                <!-- EDIT: Swap Hero Image Path Here -->
+                <div class="bento-card bento-media-card hero-media-card">
+                  <div class="media-fallback" aria-hidden="true">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="3" y="3" width="18" height="18" rx="3" />
+                      <circle cx="8.5" cy="8.5" r="1.5" />
+                      <path d="M21 15l-5-5L5 21" />
+                    </svg>
+                    <span>Alder Studio Workspace</span>
+                  </div>
+                  <img
+                    src="/src/assets/images/hero_studio_workspace_1795500242471.jpg"
+                    alt="Bright minimalist design studio workspace with oak desk and architectural plans"
+                    class="bento-img"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+
+                <!-- Interactive Benchmark Spotlight Card -->
+                <aside class="bento-card bento-surface-lavender hero-spotlight-card" aria-live="polite">
+                  <div class="spotlight-top">
+                    <div class="meta-line">
+                      <span id="hero-sector-kicker">Architecture Practice</span>
+                      <span aria-hidden="true">&middot;</span>
+                      <span id="hero-sector-sprint">5-Week Build</span>
+                    </div>
+                    <strong class="spotlight-stat tabular-nums" id="hero-sector-stat">+148% Qualified Enquiries</strong>
+                  </div>
+                  <p class="spotlight-note" id="hero-sector-note">
+                    Kovac Architecture grew monthly project briefs from 11 to 27 using scope estimators and WhatsApp routing.
+                  </p>
+                  <div class="spotlight-actions">
+                    <button type="button" class="btn-link" id="hero-prefill-estimator">
+                      Load this scope in ROI Estimator &rarr;
+                    </button>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Metrics 4-Column Pastel Bento Strip (with Count-Up Animation) -->
+          <div class="bento-grid bento-metrics-strip" aria-label="Verified client performance metrics">
+            <article class="bento-card bento-surface-mint metric-card reveal-card">
+              <p class="metric-value tabular-nums" data-count-target="142" data-count-prefix="+" data-count-suffix="%">+142%</p>
+              <h2 class="metric-label">Qualified Inbound Enquiries</h2>
+              <p class="metric-note">Median uplift 6 months post-launch across 28 B2B client sites</p>
+            </article>
+
+            <article class="bento-card bento-surface-white metric-card reveal-card">
+              <p class="metric-value tabular-nums" data-count-target="3.8" data-count-decimals="1" data-count-suffix="x">3.8x</p>
+              <h2 class="metric-label">Landing Page Return</h2>
+              <p class="metric-note">Average attributed pipeline value within the first 90 days</p>
+            </article>
+
+            <article class="bento-card bento-surface-sand metric-card reveal-card">
+              <p class="metric-value tabular-nums" data-count-target="0.9" data-count-decimals="1" data-count-suffix="s">0.9s</p>
+              <h2 class="metric-label">First Contentful Paint</h2>
+              <p class="metric-note">Zero-bloat semantic markup tuned for Core Web Vitals</p>
+            </article>
+
+            <article class="bento-card bento-surface-lavender metric-card reveal-card">
+              <p class="metric-value tabular-nums">&lt; 4 min</p>
+              <h2 class="metric-label">Lead Routing Speed</h2>
+              <p class="metric-note">Pre-formatted WhatsApp intake cuts drop-off vs. email forms</p>
+            </article>
+          </div>
+
+          <!-- Interactive Service & ROI / Project Estimator Dashboard -->
+          <section class="section-block" id="estimator-section" aria-labelledby="estimator-heading">
+            <div class="section-header-row">
+              <div>
+                <div class="meta-line">
+                  <span>Interactive Planner</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Real-Time Scope &amp; Trajectory</span>
+                </div>
+                <h2 id="estimator-heading" class="section-title">
+                  Service &amp; ROI Project Estimator
+                </h2>
+              </div>
+              <p class="section-lead">
+                Choose your business model, toggle capabilities, and adjust traffic to watch your 6-month enquiry curve update live.
+              </p>
+            </div>
+
+            <div class="bento-grid bento-estimator-grid">
+              <!-- Left Controls Card -->
+              <div class="bento-card bento-surface-white estimator-controls-card">
+                <div class="estimator-group">
+                  <div class="estimator-header-flex">
+                    <h3 class="estimator-subheading">01. Business Profile</h3>
+                    <div class="segmented-control" role="radiogroup" aria-label="Business profile">
+                      <button type="button" class="segmented-btn is-active" data-est-industry="consultancy" aria-pressed="true">
+                        Service Firm
+                      </button>
+                      <button type="button" class="segmented-btn" data-est-industry="clinic" aria-pressed="false">
+                        Clinic / Practice
+                      </button>
+                      <button type="button" class="segmented-btn" data-est-industry="b2b" aria-pressed="false">
+                        B2B Supply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="estimator-group">
+                  <h3 class="estimator-subheading">02. Select Service Modules</h3>
+                  <div class="module-toggle-grid" id="estimator-modules">
+                    <label class="module-option">
+                      <input type="checkbox" name="estimator-module" value="Conversion Website Architecture" data-price="3200" data-weeks="3" data-uplift="0.45" checked />
+                      <span class="module-box">
+                        <span class="module-top-row">
+                          <span class="module-name">Conversion Website</span>
+                          <span class="module-check-mark" aria-hidden="true">&#10003;</span>
+                        </span>
+                        <span class="module-meta tabular-nums">3 wks &middot; +45% conversion</span>
+                      </span>
+                    </label>
+
+                    <label class="module-option">
+                      <input type="checkbox" name="estimator-module" value="Local & Technical SEO" data-price="1600" data-weeks="2" data-uplift="0.35" checked />
+                      <span class="module-box">
+                        <span class="module-top-row">
+                          <span class="module-name">Technical SEO</span>
+                          <span class="module-check-mark" aria-hidden="true">&#10003;</span>
+                        </span>
+                        <span class="module-meta tabular-nums">2 wks &middot; +35% organic reach</span>
+                      </span>
+                    </label>
+
+                    <label class="module-option">
+                      <input type="checkbox" name="estimator-module" value="Enquiry & WhatsApp Funnel" data-price="1100" data-weeks="1" data-uplift="0.30" />
+                      <span class="module-box">
+                        <span class="module-top-row">
+                          <span class="module-name">WhatsApp Lead Funnel</span>
+                          <span class="module-check-mark" aria-hidden="true">&#10003;</span>
+                        </span>
+                        <span class="module-meta tabular-nums">1 wk &middot; +30% reply rate</span>
+                      </span>
+                    </label>
+
+                    <label class="module-option">
+                      <input type="checkbox" name="estimator-module" value="Brand & Swiss Design System" data-price="1800" data-weeks="2" data-uplift="0.20" />
+                      <span class="module-box">
+                        <span class="module-top-row">
+                          <span class="module-name">Swiss Design System</span>
+                          <span class="module-check-mark" aria-hidden="true">&#10003;</span>
+                        </span>
+                        <span class="module-meta tabular-nums">2 wks &middot; +20% trust lift</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="estimator-sliders">
+                  <div class="slider-field">
+                    <div class="slider-label-row">
+                      <label for="scope-traffic-slider">Current Monthly Visitors</label>
+                      <output id="scope-traffic-output" class="slider-value tabular-nums" for="scope-traffic-slider">2,500 / mo</output>
+                    </div>
+                    <input
+                      type="range"
+                      id="scope-traffic-slider"
+                      class="range-slider"
+                      min="500"
+                      max="15000"
+                      step="500"
+                      value="2500"
+                    />
+                    <div class="slider-bounds tabular-nums">
+                      <span>500</span>
+                      <span>7,500</span>
+                      <span>15,000+</span>
+                    </div>
+                  </div>
+
+                  <div class="slider-field">
+                    <div class="slider-label-row">
+                      <label for="scope-timeline-slider">Target Delivery Window</label>
+                      <output id="scope-timeline-output" class="slider-value tabular-nums" for="scope-timeline-slider">6 Weeks</output>
+                    </div>
+                    <input
+                      type="range"
+                      id="scope-timeline-slider"
+                      class="range-slider"
+                      min="2"
+                      max="12"
+                      step="1"
+                      value="6"
+                    />
+                    <div class="slider-bounds tabular-nums">
+                      <span>2 wks (Sprint)</span>
+                      <span>6 wks (Standard)</span>
+                      <span>12 wks (Phased)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Output Card with Live SVG Trajectory Chart -->
+              <aside class="bento-card bento-surface-mint estimator-output-card" aria-live="polite">
+                <div class="estimator-output-top">
+                  <div class="meta-line">
+                    <span>Projected Outcomes</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span id="est-selected-count" class="tabular-nums">2 Modules Active</span>
+                  </div>
+
+                  <div class="estimator-kpis">
+                    <div class="est-kpi">
+                      <span class="est-kpi-label">Est. Qualified Enquiries</span>
+                      <strong class="est-kpi-value tabular-nums" id="est-enquiries">+34 – 48 / mo</strong>
+                    </div>
+                    <div class="est-kpi">
+                      <span class="est-kpi-label">6-Month Pipeline Uplift</span>
+                      <strong class="est-kpi-value tabular-nums" id="est-roi">+180%</strong>
+                    </div>
+                    <div class="est-kpi">
+                      <span class="est-kpi-label">Investment &amp; Schedule</span>
+                      <strong class="est-kpi-value tabular-nums" id="est-investment">$4,800 &middot; ~5 wks</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Live Inline SVG 6-Month Enquiry Projection Curve -->
+                <div class="estimator-chart-box">
+                  <div class="chart-header-row">
+                    <span class="chart-title">6-Month Enquiry Trajectory</span>
+                    <div class="chart-legend">
+                      <span class="legend-item"><span class="legend-swatch swatch-baseline" aria-hidden="true"></span>Current</span>
+                      <span class="legend-item"><span class="legend-swatch swatch-projected" aria-hidden="true"></span>Projected</span>
+                    </div>
+                  </div>
+                  <svg
+                    id="est-chart-svg"
+                    class="est-chart-svg"
+                    viewBox="0 0 360 120"
+                    role="img"
+                    aria-label="6-month projected enquiry growth curve"
+                  >
+                    <defs>
+                      <linearGradient id="est-area-grad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#166534" stop-opacity="0.22" />
+                        <stop offset="100%" stop-color="#166534" stop-opacity="0.02" />
+                      </linearGradient>
+                    </defs>
+                    <!-- Subtle horizontal gridlines -->
+                    <line x1="16" y1="24" x2="344" y2="24" stroke="#1E293B" stroke-opacity="0.08" stroke-width="1" />
+                    <line x1="16" y1="58" x2="344" y2="58" stroke="#1E293B" stroke-opacity="0.08" stroke-width="1" />
+                    <line x1="16" y1="92" x2="344" y2="92" stroke="#1E293B" stroke-opacity="0.12" stroke-width="1" />
+                    <!-- Baseline dashed path -->
+                    <path id="est-baseline-path" d="M 24 84 L 336 80" fill="none" stroke="#64748B" stroke-width="1.75" stroke-dasharray="4 4" />
+                    <!-- Projected area & line -->
+                    <path id="est-projected-area" d="" fill="url(#est-area-grad)" />
+                    <path id="est-projected-line" d="" fill="none" stroke="#166534" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <!-- Interactive milestone points -->
+                    <g id="est-chart-points"></g>
+                    <!-- Month Labels -->
+                    <text x="24" y="110" class="chart-axis-text">M1</text>
+                    <text x="128" y="110" class="chart-axis-text">M3</text>
+                    <text x="232" y="110" class="chart-axis-text">M4</text>
+                    <text x="324" y="110" class="chart-axis-text">M6</text>
+                  </svg>
+                  <p class="chart-hover-readout tabular-nums" id="est-chart-readout">
+                    Month 6 target: +48 enquiries/mo vs. 18 baseline
+                  </p>
+                </div>
+
+                <div class="estimator-deliverables">
+                  <h3 class="estimator-subheading">Included Deliverables</h3>
+                  <ul class="deliverables-list" id="est-deliverables-list">
+                    <li>Mobile-first Swiss Bento layout &amp; semantic HTML5 build</li>
+                    <li>Schema markup, Core Web Vitals tuning &amp; local search setup</li>
+                  </ul>
+                </div>
+
+                <div class="estimator-actions">
+                  <div class="estimator-btn-row">
+                    <a
+                      id="estimator-wa-link"
+                      href="https://wa.me/6581234567"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-whatsapp estimator-primary-btn"
+                    >
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                      </svg>
+                      <span>Send Custom Estimate to WhatsApp</span>
+                    </a>
+                    <button type="button" class="btn btn-secondary" id="estimator-copy-btn">
+                      Copy Brief
+                    </button>
+                  </div>
+                  <p class="estimator-disclaimer" id="estimator-copy-status">
+                    Opens WhatsApp with your selected modules, timeline, and estimated deliverables pre-filled.
+                  </p>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <!-- Featured Services Overview Bento -->
+          <section class="section-block" aria-labelledby="home-services-heading">
+            <div class="section-header-row">
+              <div>
+                <div class="meta-line">
+                  <span>Core Capabilities</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Fixed-Scope Sprints</span>
+                </div>
+                <h2 id="home-services-heading" class="section-title">
+                  Built for speed, clarity, and direct enquiries
+                </h2>
+              </div>
+              <a href="#services" class="btn btn-secondary" data-nav-target="services">
+                View All 6 Services
+              </a>
+            </div>
+
+            <div class="bento-grid bento-featured-services">
+              <article class="bento-card bento-surface-white bento-span-2 interactive-card">
+                <div class="meta-line">
+                  <span>Web Systems</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>3–4 Weeks</span>
+                </div>
+                <h3 class="card-title">01. Conversion Website Architecture</h3>
+                <p class="card-body">
+                  Structured service pages, clear pricing anchors, and friction-free enquiry triggers engineered in lightweight semantic code that loads under a second.
+                </p>
+                <div class="card-footer-action">
+                  <button
+                    type="button"
+                    class="btn-link"
+                    data-open-whatsapp
+                    data-service="Conversion Website Architecture"
+                  >
+                    Enquire About This Service &rarr;
+                  </button>
+                </div>
+              </article>
+
+              <article class="bento-card bento-surface-lavender interactive-card">
+                <div class="meta-line">
+                  <span>Lead Routing</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>1–2 Weeks</span>
+                </div>
+                <h3 class="card-title">02. Enquiry &amp; WhatsApp Funnels</h3>
+                <p class="card-body">
+                  Guided pre-qualification widgets that route prospect name, budget scope, and selected service straight into your WhatsApp Business inbox.
+                </p>
+                <div class="card-footer-action">
+                  <button
+                    type="button"
+                    class="btn-link"
+                    data-open-whatsapp
+                    data-service="Enquiry & WhatsApp Funnel Design"
+                  >
+                    Enquire About This Service &rarr;
+                  </button>
+                </div>
+              </article>
+
+              <article class="bento-card bento-surface-sand interactive-card">
+                <div class="meta-line">
+                  <span>Organic Growth</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>2–3 Weeks</span>
+                </div>
+                <h3 class="card-title">03. Local &amp; Technical SEO</h3>
+                <p class="card-body">
+                  Clean heading hierarchy, structured JSON-LD metadata, and search-intent landing pages built to capture high-intent commercial searches.
+                </p>
+                <div class="card-footer-action">
+                  <button
+                    type="button"
+                    class="btn-link"
+                    data-open-whatsapp
+                    data-service="Local & Technical SEO"
+                  >
+                    Enquire About This Service &rarr;
+                  </button>
+                </div>
+              </article>
+
+              <article class="bento-card bento-surface-mint bento-span-2 interactive-card">
+                <div class="meta-line">
+                  <span>Proof &amp; Assurance</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Client Outcomes</span>
+                </div>
+                <h3 class="card-title">See how Kovac Architecture &amp; Harbourview Dental grew inbound bookings</h3>
+                <p class="card-body">
+                  Review verified 90-day and 6-month before-and-after metrics alongside transparent answers to common project questions.
+                </p>
+                <div class="card-footer-action">
+                  <a href="#results" class="btn-link" data-nav-target="results">
+                    Read Case Studies &amp; FAQ &rarr;
+                  </a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           PAGE 2: ABOUT US
+           =============================================================== -->
+      <section class="page-view" id="page-about" data-page="about" aria-labelledby="about-heading" hidden>
+        <div class="container page-stack">
+          <div class="bento-grid bento-about-hero">
+            <article class="bento-card bento-surface-white about-story-card">
+              <div class="meta-line">
+                <span>About Alder Studio</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Founded 2021</span>
+              </div>
+              <h1 id="about-heading" class="page-title">
+                Quiet craft, measurable enquiries, zero bloated code.
+              </h1>
+              <p class="page-intro">
+                Alder Studio started with a practical observation: most small and mid-sized service businesses pay for slow, template-heavy websites that look impressive in a slide deck yet fail to generate real conversations.
+              </p>
+              <p class="card-body">
+                Our senior team of Swiss-grid designers, conversion copywriters, and frontend engineers partners directly with founders and practice directors. We build maintainable web systems you own outright—with clear documentation and direct WhatsApp lead routing built in from day one.
+              </p>
+            </article>
+
+            <!-- EDIT: Swap About Page Image Path Here -->
+            <div class="bento-card bento-media-card about-media-card">
+              <div class="media-fallback" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="3" />
+                  <path d="M7 15l4-4 4 4 4-6" />
+                </svg>
+                <span>Swiss Grid Wireframe Planning</span>
+              </div>
+              <img
+                src="/src/assets/images/about_team_collaboration_1795500243108.jpg"
+                alt="Printed Swiss grid wireframes, pale mint notebook, and coffee on a bright studio table"
+                class="bento-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+
+          <!-- Core Values Pastel Bento Grid -->
+          <section class="section-block" aria-labelledby="values-heading">
+            <div class="section-header-row">
+              <div>
+                <div class="meta-line">
+                  <span>Operating Principles</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>How We Work</span>
+                </div>
+                <h2 id="values-heading" class="section-title">Core Values</h2>
+              </div>
+            </div>
+
+            <!-- EDIT: Duplicate a .bento-card article below to add a new value card -->
+            <div class="bento-grid bento-values-grid">
+              <article class="bento-card bento-surface-mint interactive-card">
+                <h3 class="card-title">01. Clarity Before Code</h3>
+                <p class="card-body">
+                  Every layout begins with plain-language positioning and clear buyer pathways before a single color or font is chosen.
+                </p>
+              </article>
+
+              <article class="bento-card bento-surface-lavender interactive-card">
+                <h3 class="card-title">02. Respect Buyer Time</h3>
+                <p class="card-body">
+                  Pages load in under a second on mobile networks, and prospects reach a real person on WhatsApp in two taps.
+                </p>
+              </article>
+
+              <article class="bento-card bento-surface-sand interactive-card">
+                <h3 class="card-title">03. Clean Handover</h3>
+                <p class="card-body">
+                  We write commented semantic HTML, CSS variables, and vanilla JavaScript so your internal team can update text or pricing anytime.
+                </p>
+              </article>
+
+              <article class="bento-card bento-surface-white interactive-card">
+                <h3 class="card-title">04. Measurable Outcomes</h3>
+                <p class="card-body">
+                  We track qualified enquiries, cost per consultation, and page speed—never vanity impressions or empty traffic spikes.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <!-- Interactive 4-Step Delivery Sprint Explorer -->
+          <section class="section-block" aria-labelledby="process-heading">
+            <div class="section-header-row">
+              <div>
+                <div class="meta-line">
+                  <span>Interactive Roadmap</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>4-Step Sprint</span>
+                </div>
+                <h2 id="process-heading" class="section-title">Inspect our 5-week delivery cadence</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-whatsapp"
+                data-open-whatsapp
+                data-service="Discovery & Strategy Audit"
+              >
+                Book Discovery Chat
+              </button>
+            </div>
+
+            <div class="bento-grid bento-sprint-explorer">
+              <div class="sprint-steps-col" role="tablist" aria-label="Delivery sprint phases">
+                <button type="button" class="sprint-step-btn is-active" role="tab" aria-selected="true" data-sprint-step="0">
+                  <span class="sprint-step-week">Week 1</span>
+                  <span class="sprint-step-name">01. Funnel &amp; Search Audit</span>
+                </button>
+                <button type="button" class="sprint-step-btn" role="tab" aria-selected="false" data-sprint-step="1">
+                  <span class="sprint-step-week">Week 2</span>
+                  <span class="sprint-step-name">02. Swiss Bento Wireframing</span>
+                </button>
+                <button type="button" class="sprint-step-btn" role="tab" aria-selected="false" data-sprint-step="2">
+                  <span class="sprint-step-week">Weeks 3–4</span>
+                  <span class="sprint-step-name">03. Vanilla Build &amp; QA</span>
+                </button>
+                <button type="button" class="sprint-step-btn" role="tab" aria-selected="false" data-sprint-step="3">
+                  <span class="sprint-step-week">Week 5</span>
+                  <span class="sprint-step-name">04. Handover &amp; Attribution</span>
+                </button>
+              </div>
+
+              <article class="bento-card bento-surface-mint sprint-detail-card" aria-live="polite">
+                <div class="meta-line">
+                  <span id="sprint-detail-week">Week 1</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span id="sprint-detail-gate">Sign-off: Strategy Brief</span>
+                </div>
+                <h3 class="card-title" id="sprint-detail-title">01. Funnel &amp; Search Audit</h3>
+                <p class="card-body" id="sprint-detail-summary">
+                  We map where current visitors drop off, benchmark local commercial keywords, and define the highest-intent WhatsApp enquiry entry points.
+                </p>
+                <div class="sprint-detail-grid">
+                  <div>
+                    <h4 class="sprint-sublabel">Studio Deliverables</h4>
+                    <ul class="service-bullets" id="sprint-detail-deliverables">
+                      <li>Analytics &amp; conversion drop-off scorecard</li>
+                      <li>Keyword &amp; page hierarchy blueprint</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="sprint-sublabel">Client Input Needed</h4>
+                    <p class="card-body" id="sprint-detail-client">
+                      One 45-minute kickoff call plus read-only access to current Search Console or site analytics.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           PAGE 3: SERVICES
+           =============================================================== -->
+      <section class="page-view" id="page-services" data-page="services" aria-labelledby="services-heading" hidden>
+        <div class="container page-stack">
+          <div class="section-header-row">
+            <div>
+              <div class="meta-line">
+                <span>Modular Capabilities</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Transparent Fixed Sprints</span>
+              </div>
+              <h1 id="services-heading" class="page-title">
+                Services built to convert interest into enquiries
+              </h1>
+            </div>
+            <p class="section-lead">
+              Filter by capability or tap any service card to pre-fill your WhatsApp enquiry directly.
+            </p>
+          </div>
+
+          <!-- Interactive Service Filter Bar -->
+          <div class="filter-toolbar">
+            <div class="segmented-control" role="tablist" aria-label="Filter services by category">
+              <button type="button" class="segmented-btn is-active" role="tab" aria-selected="true" data-service-filter="all">
+                All Services
+              </button>
+              <button type="button" class="segmented-btn" role="tab" aria-selected="false" data-service-filter="web">
+                Web &amp; Brand
+              </button>
+              <button type="button" class="segmented-btn" role="tab" aria-selected="false" data-service-filter="growth">
+                SEO &amp; CRO
+              </button>
+              <button type="button" class="segmented-btn" role="tab" aria-selected="false" data-service-filter="automation">
+                Lead Systems
+              </button>
+            </div>
+            <span class="filter-count tabular-nums" id="service-filter-count">Showing 6 of 6 services</span>
+          </div>
+
+          <!-- ===============================================================
+               EDIT: SERVICES BENTO GRID
+               To add a new Bento card, duplicate an <article class="bento-card ...">
+               and update data-service="..." on its button.
+               =============================================================== -->
+          <div class="bento-grid bento-services-grid" id="services-bento-grid">
+            <!-- Service 1 (Wide Featured Card) -->
+            <article class="bento-card bento-surface-mint bento-span-2 interactive-card" data-category="web">
+              <div class="meta-line">
+                <span>Web Architecture</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>3–4 Weeks</span>
+                <span aria-hidden="true">&middot;</span>
+                <span class="tabular-nums">From $3,200</span>
+              </div>
+              <h2 class="card-title">01. Conversion Website Architecture</h2>
+              <p class="card-body">
+                Multi-page or streamlined SPA business websites built on a crisp Swiss Grid and Bento foundation. Engineered for sub-second loading, clear visual hierarchy, and high-trust buyer journeys.
+              </p>
+              <ul class="service-bullets">
+                <li>Custom mobile-first responsive layout &amp; interactive tools</li>
+                <li>Commented semantic HTML5, CSS3 variables &amp; vanilla JS</li>
+                <li>Core Web Vitals optimization (95+ Lighthouse target)</li>
+              </ul>
+              <div class="card-footer-action">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-open-whatsapp
+                  data-service="Conversion Website Architecture"
+                >
+                  Enquire About This Service
+                </button>
+              </div>
+            </article>
+
+            <!-- Service 2 -->
+            <article class="bento-card bento-surface-white interactive-card" data-category="growth">
+              <div class="meta-line">
+                <span>Search Visibility</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>2 Weeks</span>
+                <span aria-hidden="true">&middot;</span>
+                <span class="tabular-nums">From $1,600</span>
+              </div>
+              <h2 class="card-title">02. Local &amp; Technical SEO</h2>
+              <p class="card-body">
+                Structured semantic markup, local search landing pages, XML sitemaps, and Schema.org implementation so high-intent local buyers find you first.
+              </p>
+              <ul class="service-bullets">
+                <li>Keyword &amp; competitor gap mapping</li>
+                <li>Technical crawl &amp; metadata remediation</li>
+              </ul>
+              <div class="card-footer-action">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm"
+                  data-open-whatsapp
+                  data-service="Local & Technical SEO"
+                >
+                  Enquire About This Service
+                </button>
+              </div>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="bento-card bento-surface-lavender interactive-card" data-category="automation">
+              <div class="meta-line">
+                <span>Lead Capture</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>1–2 Weeks</span>
+                <span aria-hidden="true">&middot;</span>
+                <span class="tabular-nums">From $1,100</span>
+              </div>
+              <h2 class="card-title">03. Enquiry &amp; WhatsApp Funnel Design</h2>
+              <p class="card-body">
+                Interactive calculators, scoped intake widgets, and one-tap WhatsApp routing that eliminate cold form fatigue and speed up sales replies.
+              </p>
+              <ul class="service-bullets">
+                <li>Pre-filled WhatsApp message routing</li>
+                <li>Interactive ROI or project scope estimators</li>
+              </ul>
+              <div class="card-footer-action">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-open-whatsapp
+                  data-service="Enquiry & WhatsApp Funnel Design"
+                >
+                  Enquire About This Service
+                </button>
+              </div>
+            </article>
+
+            <!-- Service 4 (Wide Featured Card) -->
+            <article class="bento-card bento-surface-sand bento-span-2 interactive-card" data-category="web">
+              <div class="meta-line">
+                <span>Visual Identity</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>2 Weeks</span>
+                <span aria-hidden="true">&middot;</span>
+                <span class="tabular-nums">From $1,800</span>
+              </div>
+              <h2 class="card-title">04. Brand &amp; Swiss Design Systems</h2>
+              <p class="card-body">
+                Cohesive typography pairings, soft editorial color tokens, iconography rules, and reusable Bento card libraries that give your firm an unmistakable, calm authority across web and sales decks.
+              </p>
+              <ul class="service-bullets">
+                <li>CSS variable token library &amp; typography scale</li>
+                <li>Reusable UI components &amp; social proof cards</li>
+              </ul>
+              <div class="card-footer-action">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-open-whatsapp
+                  data-service="Brand & Swiss Design Systems"
+                >
+                  Enquire About This Service
+                </button>
+              </div>
+            </article>
+
+            <!-- Service 5 -->
+            <article class="bento-card bento-surface-white interactive-card" data-category="growth">
+              <div class="meta-line">
+                <span>Campaign Pages</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>10 Days</span>
+                <span aria-hidden="true">&middot;</span>
+                <span class="tabular-nums">From $1,400</span>
+              </div>
+              <h2 class="card-title">05. Landing Page Sprint &amp; CRO</h2>
+              <p class="card-body">
+                Dedicated high-converting campaign pages for paid search or seasonal offers, complete with objection-handling FAQs and clear trust proof.
+              </p>
+              <ul class="service-bullets">
+                <li>Offer framing &amp; conversion copywriting</li>
+                <li>Above-the-fold CTA &amp; proof placement</li>
+              </ul>
+              <div class="card-footer-action">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm"
+                  data-open-whatsapp
+                  data-service="Landing Page Sprint & CRO"
+                >
+                  Enquire About This Service
+                </button>
+              </div>
+            </article>
+
+            <!-- Service 6 -->
+            <article class="bento-card bento-surface-mint interactive-card" data-category="automation">
+              <div class="meta-line">
+                <span>Measurement</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>1 Week</span>
+                <span aria-hidden="true">&middot;</span>
+                <span class="tabular-nums">From $950</span>
+              </div>
+              <h2 class="card-title">06. Analytics &amp; Attribution Setup</h2>
+              <p class="card-body">
+                Privacy-conscious event tracking for WhatsApp clicks, form submissions, and service card interactions so you know what drives revenue.
+              </p>
+              <ul class="service-bullets">
+                <li>UTM parameter &amp; button event tagging</li>
+                <li>Monthly one-page lead conversion scorecard</li>
+              </ul>
+              <div class="card-footer-action">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm"
+                  data-open-whatsapp
+                  data-service="Analytics & Attribution Setup"
+                >
+                  Enquire About This Service
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Cross-link Banner to Interactive Estimator on Home -->
+          <div class="bento-card bento-surface-white estimator-callout-bar">
+            <div>
+              <h2 class="card-title">Want to combine services and preview your timeline?</h2>
+              <p class="card-body">
+                Use our interactive Project &amp; ROI Estimator to toggle service modules and send a custom brief straight to WhatsApp.
+              </p>
+            </div>
+            <button type="button" class="btn btn-primary" id="jump-to-estimator-btn">
+              Open ROI Estimator
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           PAGE 4: RESULTS & FAQ
+           =============================================================== -->
+      <section class="page-view" id="page-results" data-page="results" aria-labelledby="results-heading" hidden>
+        <div class="container page-stack">
+          <div class="section-header-row">
+            <div>
+              <div class="meta-line">
+                <span>Verified Outcomes</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Client Case Studies</span>
+              </div>
+              <h1 id="results-heading" class="page-title">
+                Measured results &amp; straightforward answers
+              </h1>
+            </div>
+            <p class="section-lead">
+              Every engagement is benchmarked against baseline enquiry volume, response speed, and search visibility.
+            </p>
+          </div>
+
+          <!-- Case Studies Bento Grid -->
+          <div class="bento-grid bento-results-grid">
+            <!-- Featured Case Study with Interactive Before/After Switcher -->
+            <article class="bento-card bento-surface-white case-study-featured bento-span-2">
+              <div class="case-study-media">
+                <div class="media-fallback" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="3" />
+                    <path d="M4 16l5-5 4 4 7-7" />
+                  </svg>
+                  <span>Kovac Architecture Studio</span>
+                </div>
+                <!-- EDIT: Swap Case Study Image Path Here -->
+                <img
+                  src="/src/assets/images/case_study_showroom_1795500243293.jpg"
+                  alt="Minimalist architectural studio lounge with travertine stone table and pale ash chairs"
+                  class="bento-img"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+
+              <div class="case-study-content">
+                <div class="case-top-bar">
+                  <div class="meta-line">
+                    <span>Architecture Practice</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>5-Month Outcome</span>
+                  </div>
+
+                  <!-- Interactive Before / After Toggle -->
+                  <div class="segmented-control" role="tablist" aria-label="Compare before and after metrics">
+                    <button type="button" class="segmented-btn is-active" role="tab" aria-selected="true" data-case-mode="after">
+                      After Sprint
+                    </button>
+                    <button type="button" class="segmented-btn" role="tab" aria-selected="false" data-case-mode="before">
+                      Before
+                    </button>
+                  </div>
+                </div>
+
+                <h2 class="case-metric-headline tabular-nums" id="case-headline">+148% Qualified Project Enquiries</h2>
+
+                <div class="case-bars" aria-live="polite">
+                  <div class="case-bar-row">
+                    <div class="case-bar-labels">
+                      <span>Monthly Project Briefs</span>
+                      <strong class="tabular-nums" id="case-val-leads">27 / mo</strong>
+                    </div>
+                    <div class="case-bar-track">
+                      <div class="case-bar-fill fill-mint" id="case-bar-leads" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="case-bar-row">
+                    <div class="case-bar-labels">
+                      <span>Mobile Page Speed (FCP)</span>
+                      <strong class="tabular-nums" id="case-val-speed">0.9s</strong>
+                    </div>
+                    <div class="case-bar-track">
+                      <div class="case-bar-fill fill-lavender" id="case-bar-speed" style="width: 92%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-body" id="case-summary-text">
+                  Rebuilt in a clean Bento case-study structure with residential/commercial scope estimators and direct WhatsApp booking—growing qualified briefs from 11 to 27 per month.
+                </p>
+                <p class="case-attribution">
+                  &mdash; Elena Kovac, Managing Partner at Kovac Architecture Group
+                </p>
+              </div>
+            </article>
+
+            <!-- Case Study 2 -->
+            <article class="bento-card bento-surface-mint interactive-card">
+              <div class="meta-line">
+                <span>Healthcare Practice</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>90-Day Outcome</span>
+              </div>
+              <h2 class="case-metric-headline tabular-nums">-42% Cost Per Consultation</h2>
+              <p class="card-body">
+                Replaced multi-step booking portals with treatment-specific landing cards and a two-field WhatsApp triage widget. Patient consultation bookings rose 64% in 90 days.
+              </p>
+              <p class="case-attribution">
+                &mdash; Dr. Marcus Tan, Clinical Director at Harbourview Dental
+              </p>
+            </article>
+
+            <!-- Case Study 3 -->
+            <article class="bento-card bento-surface-lavender bento-span-2 interactive-card">
+              <div class="meta-line">
+                <span>B2B Distribution</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Q1–Q2 Pipeline</span>
+              </div>
+              <h2 class="case-metric-headline tabular-nums">$420K Attributed Quote Pipeline</h2>
+              <p class="card-body">
+                Restructured 14 product specification pages into scannable Swiss comparison tables paired with instant WhatsApp specification requests for commercial contractors.
+              </p>
+              <p class="case-attribution">
+                &mdash; Henrik Lindqvist, Commercial Lead at Nordic Timber Supply
+              </p>
+            </article>
+
+            <!-- Summary Proof Callout Card -->
+            <article class="bento-card bento-surface-sand case-cta-card interactive-card">
+              <h2 class="card-title">Want a similar benchmark for your site?</h2>
+              <p class="card-body">
+                Send us your current URL on WhatsApp and we will share three specific conversion fixes within 24 hours.
+              </p>
+              <div class="card-footer-action">
+                <button
+                  type="button"
+                  class="btn btn-whatsapp btn-sm"
+                  data-open-whatsapp
+                  data-service="Free Conversion Audit"
+                >
+                  Request URL Review
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Interactive Vanilla JS FAQ Accordion with Category Filter -->
+          <section class="section-block" aria-labelledby="faq-heading">
+            <div class="section-header-row">
+              <div>
+                <div class="meta-line">
+                  <span>Buyer Questions</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Before You Start</span>
+                </div>
+                <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+              </div>
+
+              <div class="segmented-control" role="tablist" aria-label="Filter FAQ topics">
+                <button type="button" class="segmented-btn is-active" role="tab" aria-selected="true" data-faq-filter="all">All</button>
+                <button type="button" class="segmented-btn" role="tab" aria-selected="false" data-faq-filter="process">Timeline</button>
+                <button type="button" class="segmented-btn" role="tab" aria-selected="false" data-faq-filter="tech">Ownership &amp; Tech</button>
+                <button type="button" class="segmented-btn" role="tab" aria-selected="false" data-faq-filter="pricing">Pricing &amp; SEO</button>
+              </div>
+            </div>
+
+            <div class="bento-card bento-surface-white faq-container" id="faq-accordion">
+              <div class="faq-item" data-faq-topic="process">
+                <h3 class="faq-question-heading">
+                  <button type="button" class="faq-trigger" aria-expanded="true" aria-controls="faq-panel-1" id="faq-btn-1">
+                    <span>How long does a typical website or funnel sprint take?</span>
+                    <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                </h3>
+                <div class="faq-panel is-open" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
+                  <div class="faq-panel-inner">
+                    <p>
+                      Most focused service websites launch in 3 to 4 weeks. Standalone WhatsApp lead funnels or campaign landing page sprints are delivered in 7 to 10 business days, while combined brand, SEO, and multi-page builds typically take 5 to 6 weeks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item" data-faq-topic="tech">
+                <h3 class="faq-question-heading">
+                  <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-btn-2">
+                    <span>Do we own 100% of the code and assets upon completion?</span>
+                    <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                </h3>
+                <div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2">
+                  <div class="faq-panel-inner">
+                    <p>
+                      Yes. There are zero proprietary CMS lock-ins or mandatory monthly platform fees. You receive clean, well-commented HTML5, CSS3, and vanilla JavaScript files that can be hosted anywhere—from static CDNs to your existing company server.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item" data-faq-topic="tech">
+                <h3 class="faq-question-heading">
+                  <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-btn-3">
+                    <span>How does the WhatsApp enquiry integration work?</span>
+                    <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                </h3>
+                <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3">
+                  <div class="faq-panel-inner">
+                    <p>
+                      When a visitor taps any service CTA or the floating widget, they enter their name and required service. Our script dynamically encodes a standard <code>wa.me</code> URL pre-filled with their details, opening WhatsApp directly on mobile or desktop with zero third-party middleware costs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item" data-faq-topic="pricing">
+                <h3 class="faq-question-heading">
+                  <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-btn-4">
+                    <span>Will you migrate our existing SEO rankings without traffic loss?</span>
+                    <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                </h3>
+                <div class="faq-panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4">
+                  <div class="faq-panel-inner">
+                    <p>
+                      Yes. Every redesign includes a full URL inventory, 301 redirect map, preserved or improved title/meta tags, and Search Console verification so existing organic authority transfers cleanly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item" data-faq-topic="pricing">
+                <h3 class="faq-question-heading">
+                  <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-btn-5">
+                    <span>How are projects priced and billed?</span>
+                    <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                </h3>
+                <div class="faq-panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5">
+                  <div class="faq-panel-inner">
+                    <p>
+                      Every sprint is quoted at a fixed fee before work begins—typically split 50% at kickoff and 50% upon launch sign-off. Use the interactive ROI Estimator on the Home page for an immediate ballpark figure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           PAGE 5: CONTACT
+           =============================================================== -->
+      <section class="page-view" id="page-contact" data-page="contact" aria-labelledby="contact-heading" hidden>
+        <div class="container page-stack">
+          <div class="section-header-row">
+            <div>
+              <div class="meta-line">
+                <span>Start a Conversation</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Response Under 1 Business Day</span>
+              </div>
+              <h1 id="contact-heading" class="page-title">
+                Tell us what you are building
+              </h1>
+            </div>
+            <p class="section-lead">
+              Send a project note using the form below or message our senior partners directly on WhatsApp.
+            </p>
+          </div>
+
+          <div class="bento-grid bento-contact-grid">
+            <!-- Validated Contact Form Card -->
+            <div class="bento-card bento-surface-white contact-form-card">
+              <form id="contact-form" novalidate>
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="contact-name">Full Name <span class="required-mark" aria-hidden="true">*</span></label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      placeholder="e.g. Sarah Lim"
+                      autocomplete="name"
+                      required
+                    />
+                    <p class="field-error" id="contact-name-error" role="alert"></p>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="contact-email">Work Email <span class="required-mark" aria-hidden="true">*</span></label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      placeholder="sarah@company.com"
+                      autocomplete="email"
+                      required
+                    />
+                    <p class="field-error" id="contact-email-error" role="alert"></p>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-service">Service Needed <span class="required-mark" aria-hidden="true">*</span></label>
+                  <select id="contact-service" name="service" required>
+                    <option value="">Select a service...</option>
+                    <option value="Conversion Website Architecture">01. Conversion Website Architecture</option>
+                    <option value="Local & Technical SEO">02. Local &amp; Technical SEO</option>
+                    <option value="Enquiry & WhatsApp Funnel Design">03. Enquiry &amp; WhatsApp Funnel Design</option>
+                    <option value="Brand & Swiss Design Systems">04. Brand &amp; Swiss Design Systems</option>
+                    <option value="Landing Page Sprint & CRO">05. Landing Page Sprint &amp; CRO</option>
+                    <option value="Analytics & Attribution Setup">06. Analytics &amp; Attribution Setup</option>
+                  </select>
+                  <p class="field-error" id="contact-service-error" role="alert"></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-message">Project Details <span class="required-mark" aria-hidden="true">*</span></label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="4"
+                    placeholder="Share your current website URL, timeline, or primary enquiry goal..."
+                    required
+                  ></textarea>
+                  <p class="field-error" id="contact-message-error" role="alert"></p>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Send Project Enquiry</button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-open-whatsapp
+                    data-service="Conversion Website Architecture"
+                  >
+                    Prefer WhatsApp?
+                  </button>
+                </div>
+              </form>
+
+              <!-- Contact Form Confirmation State -->
+              <div class="form-success-panel" id="contact-success-panel" hidden aria-live="polite">
+                <div class="meta-line">
+                  <span>Enquiry Recorded</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Confirmation</span>
+                </div>
+                <h2 class="card-title">Thank you, <span id="contact-success-name">there</span>.</h2>
+                <p class="card-body">
+                  Your enquiry for <strong id="contact-success-service">your project</strong> has been prepared. For an immediate reply within business hours, forward this exact summary directly to our WhatsApp desk.
+                </p>
+                <div class="form-success-actions">
+                  <a
+                    id="contact-success-wa-link"
+                    href="https://wa.me/6581234567"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-whatsapp"
+                  >
+                    Continue on WhatsApp
+                  </a>
+                  <button type="button" class="btn btn-secondary" id="contact-reset-btn">
+                    Send Another Note
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Business Contact Details Bento Column -->
+            <div class="contact-details-stack">
+              <article class="bento-card bento-surface-mint interactive-card">
+                <div class="meta-line">
+                  <span>Fastest Channel</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Direct Desk</span>
+                </div>
+                <h2 class="card-title">Instant WhatsApp Consultation</h2>
+                <p class="card-body">
+                  Speak directly with a lead strategist—no intake bots or call center queues.
+                </p>
+                <div class="card-footer-action">
+                  <button
+                    type="button"
+                    class="btn btn-whatsapp btn-full"
+                    data-open-whatsapp
+                    data-service="General Enquiry"
+                  >
+                    Start WhatsApp Chat
+                  </button>
+                </div>
+              </article>
+
+              <!-- EDIT: Replace Studio Addresses, Email & Hours Here -->
+              <article class="bento-card bento-surface-lavender interactive-card">
+                <h2 class="card-title">Studio Details</h2>
+                <dl class="contact-dl">
+                  <div>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:hello@alderstudio.example">hello@alderstudio.example</a></dd>
+                  </div>
+                  <div>
+                    <dt>WhatsApp Desk</dt>
+                    <dd class="tabular-nums">+65 8123 4567</dd>
+                  </div>
+                  <div>
+                    <dt>Studios</dt>
+                    <dd>71 Robinson Rd, Singapore &middot; 120 Collins St, Melbourne</dd>
+                  </div>
+                  <div>
+                    <dt>Hours</dt>
+                    <dd>Mon–Fri, 9:00 AM – 6:00 PM SGT</dd>
+                  </div>
+                </dl>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================================================
+         QUIET FOOTER
+         =================================================================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand-col">
+          <span class="footer-wordmark">Alder Studio</span>
+          <p class="footer-tagline">
+            Swiss Grid web architecture and WhatsApp lead systems for growing service businesses.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home" data-nav-target="home">Home</a>
+          <a href="#about" data-nav-target="about">About Us</a>
+          <a href="#services" data-nav-target="services">Services</a>
+          <a href="#results" data-nav-target="results">Results &amp; FAQ</a>
+          <a href="#contact" data-nav-target="contact">Contact</a>
+        </nav>
+
+        <p class="footer-legal">
+          &copy; <span id="footer-year">2026</span> Alder Studio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ===================================================================
+         FLOATING WHATSAPP CHAT WIDGET (Bottom-Right Corner Across All Views)
+         =================================================================== -->
+    <div class="wa-widget-root" id="wa-widget-root">
+      <!-- Popover Card -->
+      <div
+        class="wa-popover"
+        id="wa-popover"
+        role="dialog"
+        aria-modal="false"
+        aria-labelledby="wa-popover-title"
+        hidden
+      >
+        <div class="wa-popover-header">
+          <div>
+            <p class="wa-popover-kicker">Direct WhatsApp Desk</p>
+            <h2 id="wa-popover-title" class="wa-popover-title">Start a quick chat</h2>
+          </div>
+          <button
+            type="button"
+            class="wa-close-btn"
+            id="wa-close-btn"
+            aria-label="Close WhatsApp widget"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="6" y1="6" x2="18" y2="18" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <form class="wa-form" id="wa-widget-form" novalidate>
+          <div class="form-field">
+            <label for="wa-visitor-name">Your Name</label>
+            <input
+              type="text"
+              id="wa-visitor-name"
+              name="visitorName"
+              placeholder="Enter your name"
+              autocomplete="name"
+              required
+            />
+            <p class="field-error" id="wa-name-error" role="alert"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="wa-service-select">Required Service</label>
+            <select id="wa-service-select" name="requiredService" required>
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Conversion Website Architecture">01. Conversion Website Architecture</option>
+              <option value="Local & Technical SEO">02. Local &amp; Technical SEO</option>
+              <option value="Enquiry & WhatsApp Funnel Design">03. Enquiry &amp; WhatsApp Funnel Design</option>
+              <option value="Brand & Swiss Design Systems">04. Brand &amp; Swiss Design Systems</option>
+              <option value="Landing Page Sprint & CRO">05. Landing Page Sprint &amp; CRO</option>
+              <option value="Analytics & Attribution Setup">06. Analytics &amp; Attribution Setup</option>
+              <option value="Discovery & Strategy Audit">Discovery &amp; Strategy Audit</option>
+              <option value="Free Conversion Audit">Free Conversion Audit</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp btn-full">
+            Open WhatsApp Chat
+          </button>
+        </form>
+
+        <!-- Dynamic Ready-to-Open Fallback & Confirmation -->
+        <div class="wa-ready-box" id="wa-ready-box" hidden aria-live="polite">
+          <p class="wa-ready-label">Message formatted for WhatsApp:</p>
+          <p class="wa-ready-preview" id="wa-ready-preview"></p>
+          <a
+            id="wa-direct-anchor"
+            href="https://wa.me/6581234567"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp btn-full"
+          >
+            Launch WhatsApp Now
+          </a>
+          <button type="button" class="btn-link wa-edit-again" id="wa-edit-again-btn">
+            Edit details
+          </button>
+        </div>
+      </div>
+
+      <!-- Floating Launcher Button -->
+      <button
+        type="button"
+        class="wa-fab"
+        id="wa-fab"
+        aria-expanded="false"
+        aria-controls="wa-popover"
+        aria-label="Open WhatsApp chat enquiry"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+        </svg>
+        <span class="wa-fab-text">WhatsApp</span>
+      </button>
+    </div>
+
+    <!-- Pure Vanilla JavaScript (Zero External Frameworks) -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
